@@ -350,7 +350,7 @@ def build():
         rendered = page_html(title, prefix, body, worksheet=worksheet)
         (SITE / site_path).write_text(rendered, encoding="utf-8")
 
-    print("Built %d html pages into %s" % (len(pages) + 1, SITE))
+    print("Built %d pages into %s" % (len(pages), SITE))
 
 
 def main(argv=None):
